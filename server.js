@@ -37,4 +37,8 @@ io.on('connection', socket => {
     })
 })
 
-server.listen(7070);
+const port = 7070;
+
+server.listen(port, () => {
+    console.log(`listening on port ${port}`);
+});
